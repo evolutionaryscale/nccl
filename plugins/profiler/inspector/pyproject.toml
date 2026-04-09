@@ -1,7 +1,7 @@
 [project]
 authors = [{name = "Steve Chan", email = ""}]
 dependencies = []
-name = "nccl-profiler-inspector-cu12"
+name = "nccl-inspector-cu12"
 requires-python = ">= 3.11"
 version = "2.29.7"
 

@@ -18,7 +18,7 @@ class CustomBuildHook(BuildHookInterface):
             build_data['tag'] = f"cp310-abi3-manylinux_{glibc_tag}_{arch}"
 
             so_filename = "libnccl-profiler-inspector.so"
-            build_data['force_include'][so_filename] = f"nccl_profiler_inspector_cu12/{so_filename}"
+            build_data['force_include'][so_filename] = f"nccl_inspector_cu12/{so_filename}"
 
         except subprocess.CalledProcessError as e:
             print(f"Makefile failed: {e}")
